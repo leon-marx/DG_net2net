@@ -1,8 +1,8 @@
-This first project aims to use AdaIN style transfer in order to generate artificial training data wor the wilds/poverty dataset.
+This first project aims to use AdaIN style transfer in order to generate artificial training data for the wilds datasets.
 There are several steps to follow:
 
 ## Step 1
-Download the poverty dataset
+Download the dataset
 
 ## Step 2
 Create artificial data
