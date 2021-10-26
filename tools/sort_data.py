@@ -23,10 +23,8 @@ for x, y_true, metadata in tqdm(train_loader):
         name = 0
     highest[groupname] = name
 
-    if os.path.exists(f"data/poverty_sorted/{groupname}/"):
-        im = transforms.ToPILImage(x)
-        im.save(f"{name}.jpeg")
-    else:
+    if not os.path.exists(f"data/poverty_sorted/{groupname}/"):
         os.mkdir(f"data/poverty_sorted/{groupname}/")
-        im = transforms.ToPILImage(x)
-        im.save(f"{name}.jpeg")
+    im = Image.fromarray(x.numpy())
+    im.save(f"{name}.jpeg")
+    
