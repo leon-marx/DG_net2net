@@ -25,6 +25,6 @@ for x, y_true, metadata in tqdm(train_loader):
 
     if not os.path.exists(f"data/poverty_sorted/{groupname}/"):
         os.mkdir(f"data/poverty_sorted/{groupname}/")
-    im = Image.fromarray(x.numpy())
+    im = Image.fromarray(x.numpy().reshape((224, 224)))
     im.save(f"{name}.jpeg")
     
