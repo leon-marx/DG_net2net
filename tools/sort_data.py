@@ -1,15 +1,14 @@
 import os
 from PIL import Image
-import torchvision.transforms as transforms
 from tqdm import tqdm
 from wilds import get_dataset
 from wilds.common.data_loaders import get_train_loader
 from wilds.common.grouper import CombinatorialGrouper
 
-dataset = get_dataset(dataset="poverty", download=False)
+dataset = get_dataset(dataset="fmow", download=False)
 train_data = dataset.get_subset("train")
 train_loader = get_train_loader("standard", train_data, batch_size=1)
-grouper = CombinatorialGrouper(dataset, ["country", "urban"])
+grouper = CombinatorialGrouper(dataset, ["year", "region"])
 
 highest = {}
 
@@ -23,8 +22,7 @@ for x, y_true, metadata in tqdm(train_loader):
         name = 0
     highest[groupname] = name
 
-    if not os.path.exists(f"data/poverty_sorted/{groupname}/"):
-        os.mkdir(f"data/poverty_sorted/{groupname}/")
+    if not os.path.exists(f"data/fmow_sorted/{groupname}/"):
+        os.mkdir(f"data/fmow_sorted/{groupname}/")
     im = Image.fromarray(x.numpy().reshape((224, 224, -1)))
     im.save(f"{name}.jpeg")
-    
