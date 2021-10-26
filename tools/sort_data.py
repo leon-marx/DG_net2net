@@ -1,6 +1,7 @@
 import os
 from PIL import Image
 import torchvision.transforms as transforms
+from tqdm import tqdm
 from wilds import get_dataset
 from wilds.common.data_loaders import get_train_loader
 from wilds.common.grouper import CombinatorialGrouper
@@ -12,7 +13,7 @@ grouper = CombinatorialGrouper(dataset, ["country", "urban"])
 
 highest = {}
 
-for x, y_true, metadata in train_loader:
+for x, y_true, metadata in tqdm(train_loader):
     # z = grouper.metadata_to_group(metadata).item()
     groupname = f"{int(metadata[0])}_{int(metadata[2])}"
 
