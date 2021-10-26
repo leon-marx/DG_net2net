@@ -15,7 +15,7 @@ highest = {}
 
 for x, y_true, metadata in tqdm(train_loader):
     # z = grouper.metadata_to_group(metadata).item()
-    groupname = f"{int(metadata[0])}_{int(metadata[2])}"
+    groupname = f"{int(metadata[0, 0].item())}_{int(metadata[0, 2].item())}"
 
     if groupname in list(highest.keys()):
         name = highest[groupname] + 1
