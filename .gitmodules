@@ -1,0 +1,6 @@
+[submodule "wilds"]
+	path = wilds
+	url = https://github.com/p-lambda/wilds.git
+[submodule "AdaIN-style"]
+	path = AdaIN-style
+	url = https://github.com/xunhuang1995/AdaIN-style.git
