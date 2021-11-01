@@ -134,3 +134,7 @@ dmypy.json
 
 # Data directory
 data/
+
+# pycache
+__pycache__/
+*.pyc
