@@ -1,0 +1,8 @@
+import os
+import subprocess
+
+os.chdir("C:/Users/gooog/Desktop/Bachelor/Code/bachelor")
+
+bashCommand = "python net2net/translation.py --base net2net/configs/creativity/pacs_dog.yaml -t --gpus 0,"
+process = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
+output, error = process.communicate()
