@@ -25,6 +25,7 @@ for i in range(5):
     print("")
     print(f"Starting Iteration {i}")
     create_yaml("test", 10, "2021-22-11-T31_iteration_1")
+    log_dir = ""
     if f"pacs_dog_{i}.yaml" not in os.listdir("net2net/configs/creativity"):
         lr_expo = 7+i
         log_dir = ""
