@@ -138,3 +138,6 @@ data/
 # pycache
 __pycache__/
 *.pyc
+
+# checkpoints
+logs/
