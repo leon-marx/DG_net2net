@@ -24,7 +24,6 @@ for i in range(5):
     print("")
     print("")
     print(f"Starting Iteration {i}")
-    print("")
     create_yaml("test", 10, "2021-22-11-T31_iteration_1")
     if f"pacs_dog_{i}.yaml" not in os.listdir("net2net/configs/creativity"):
         lr_expo = 7+i
@@ -34,7 +33,9 @@ for i in range(5):
                 log_dir = os.listdir("logs")[j]
         log_dir += "/checkpoints/last.ckpt"
         create_yaml(f"pacs_dog_{i}.yaml", lr_expo, log_dir)
-    bashCommand = f"python net2net/translation.py --base net2net/configs/creativity/pacs_dog_{i}.yaml -t --gpus 0,1,2,3 --name iteration_{i} --max_epochs 200"
+    print(f"Loading Model from {log_dir}")
+    print("")
+    bashCommand = f"python net2net/translation.py --base net2net/configs/creativity/pacs_dog_{i}.yaml -t --gpus 0,1,2,3 --name iteration_{i} --max_epochs 2"
     killCommand = "nvidia-smi | grep 'leon-net2net' | awk '{ print $3 }' | xargs -n1 kill -9"
     trainProcess = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
     trainOutput, trainError = trainProcess.communicate()
