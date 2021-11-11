@@ -36,18 +36,11 @@ for i in range(5):
         create_yaml(f"pacs_dog_{i}.yaml", lr_expo, log_dir)
     print(f"Loading Model from {log_dir}")
     print("")
-    bashCommand = f"python net2net/translation.py --base net2net/configs/creativity/pacs_dog_{i}.yaml -t --gpus 0,1,2,3 --name iteration_{i} --max_epochs 2"
+    bashCommand = f"python net2net/translation.py --base net2net/configs/creativity/pacs_dog_{i}.yaml -t --gpus 0,1,2,3 --name iteration_{i} --max_epochs 200"
     killCommand = "nvidia-smi | grep 'leon-net2net' | awk '{ print $5 }' | xargs -n1 kill -9"
-    print("checkpoint 1")
     trainProcess = subprocess.Popen(bashCommand.split())
-    print("checkpoint 2")
     trainOutput, trainError = trainProcess.communicate()
-    print("checkpoint 3")
     trainProcess.wait()
-    print("checkpoint 4")
     killProcess = subprocess.Popen(killCommand.split())
-    print("checkpoint 5")
     killOutput, killError = killProcess.communicate()
-    print("checkpoint 6")
     killProcess.wait()
-    print("checkpoint 7")
