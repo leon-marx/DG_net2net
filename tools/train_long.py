@@ -37,7 +37,7 @@ for i in range(5):
     print(f"Loading Model from {log_dir}")
     print("")
     bashCommand = f"python net2net/translation.py --base net2net/configs/creativity/pacs_dog_{i}.yaml -t --gpus 0,1,2,3 --name iteration_{i} --max_epochs 2"
-    killCommand = "nvidia-smi | grep 'leon-net2net' | awk '{ print $3 }' | xargs -n1 kill -9"
+    killCommand = "nvidia-smi | grep 'leon-net2net' | awk '{ print $5 }' | xargs -n1 kill -9"
     trainProcess = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
     trainOutput, trainError = trainProcess.communicate()
     trainProcess.wait()
