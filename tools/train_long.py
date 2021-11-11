@@ -4,7 +4,7 @@ import subprocess
 if os.name == "nt":
     os.chdir("C:/Users/gooog/Desktop/Bachelor/Code/bachelor")
 else:
-    os.chdir("home/tarkus/leon/bachelor")
+    os.chdir("/home/tarkus/leon/bachelor")
 
 def create_yaml(filename, lr_expo, log_dir):
     with open(f"net2net/configs/creativity/{filename}", "w") as f1:
