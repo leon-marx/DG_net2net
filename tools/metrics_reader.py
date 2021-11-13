@@ -12,7 +12,7 @@ df = pd.read_csv(log_path)
 print(list(df.keys()))
 
 keys = list(df.keys())
-keys = ["epoch"]
+keys = ["val/total_loss", "epoch"]
 
 print(df["created_at"])
 
