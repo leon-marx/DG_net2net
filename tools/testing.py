@@ -10,12 +10,12 @@ from PIL import Image
 # m = resnets.resnet101(pretrained=True)
 
 
-img = Image.open("logs/2021-11-19T16-05-20_augmented_z_512/images/images/train/inputs_gs-000000_e-000000_b-000000.png")  # batch_size, channels, height, width
+img = Image.open("C:/users/gooog/desktop/test.jpg")  # batch_size, channels, height, width
 img = T.ToTensor()(img).view(1, 3, 260, -1)
 print(img.shape)
 print(img.max(), img.min())
 plot1 = img.view(3, 260, -1).transpose(0, 2).transpose(0, 1).detach().numpy()
-plt.imshow(plot1.astype(int) * 255)
+plt.imshow(plot1)
 plt.show()
 
 
