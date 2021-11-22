@@ -7,15 +7,21 @@ from pl_bolts.models.self_supervised import resnets
 from PIL import Image
 
 
-m = resnets.resnet101(pretrained=True)
+# m = resnets.resnet101(pretrained=True)
 
 
-img = Image.open("data/PACS_train/photo/dog/056_0050.jpg")  # batch_size, channels, height, width
-img = T.ToTensor()(img).view(1, 3, 227, 227)
+img = Image.open("logs/2021-11-19T16-05-20_augmented_z_512/images/images/train/inputs_gs-000000_e-000000_b-000000.png")  # batch_size, channels, height, width
+img = T.ToTensor()(img).view(1, 3, 260, -1)
 print(img.shape)
 print(img.max(), img.min())
+plot1 = img.view(3, 260, -1).transpose(0, 2).transpose(0, 1).detach().numpy()
+plt.imshow(plot1.astype(int) * 255)
+plt.show()
 
 
+
+
+"""
 def get_x_prime(model):
     res = model.forward(img)
     return res
@@ -45,21 +51,6 @@ plt.title("Recovered")
 plt.imshow(plot2)
 plt.show()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"""
 m = VAE(input_height=227).load_from_checkpoint("logs/downloaded/cifar10_resnet18_epoch=89.ckpt")
 
 # print(m.pretrained_weights_available())
