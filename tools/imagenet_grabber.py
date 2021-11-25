@@ -12,7 +12,7 @@ for content in content_list:
     for id in ids:
         class_list += id + " "
     # print(class_list)
-    bashCommand = f"python ./../ImageNet-Datasets-Downloader/downloader.py -data_root /home/../hd-data/pacs_classes_only/{content} -use_class_list True -class_list {class_list}-images_per_class 10000"
+    bashCommand = f"python ./../ImageNet-Datasets-Downloader/downloader.py -data_root /home/../hd-data/imagenet/pacs_classes_only/{content} -use_class_list True -class_list {class_list}-images_per_class 10000"
     print(bashCommand)
     process = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
     output, error = process.communicate()
