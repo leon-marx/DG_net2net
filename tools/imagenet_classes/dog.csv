@@ -1,0 +1,198 @@
+n02083346,canine,1633,1126
+n02083672,bitch,1474,279
+n02083780,brood bitch,47,1
+n02084071,dog,1603,632
+n02084732,pooch,1257,996
+n02084861,cur,1359,1075
+n02085019,feist,376,91
+n02085118,pariah dog,63,12
+n02085272,lapdog,868,362
+n02085374,toy dog,1224,646
+n02085620,Chihuahua,1750,1303
+n02085782,Japanese spaniel,385,12
+n02085936,Maltese dog,1287,931
+n02086079,Pekinese,1598,1291
+n02086240,Shih-Tzu,2563,1933
+n02086346,toy spaniel,352,121
+n02086478,English toy spaniel,455,70
+n02086646,Blenheim spaniel,971,293
+n02086753,King Charles spaniel,1222,934
+n02086910,papillon,1406,449
+n02087046,toy terrier,640,354
+n02087122,hunting dog,1222,837
+n02087314,courser,246,3
+n02087394,Rhodesian ridgeback,2449,1931
+n02087551,hound,1209,676
+n02088094,Afghan hound,1134,777
+n02088238,basset,1660,1078
+n02088364,beagle,1788,1051
+n02088466,bloodhound,1161,624
+n02088632,bluetick,537,217
+n02088745,boarhound,18,0
+n02088839,coonhound,1411,786
+n02088992,coondog,319,69
+n02089078,black-and-tan coonhound,435,68
+n02089232,dachshund,1371,933
+n02089468,sausage dog,1445,1429
+n02089555,foxhound,1011,460
+n02089725,American foxhound,283,8
+n02089867,Walker hound,364,68
+n02089973,English foxhound,454,48
+n02090129,harrier,217,45
+n02090253,Plott hound,5,4
+n02090379,redbone,836,461
+n02090475,wolfhound,1194,822
+n02090622,borzoi,1107,770
+n02090721,Irish wolfhound,1278,805
+n02090827,greyhound,1633,1306
+n02091032,Italian greyhound,1281,980
+n02091134,whippet,1656,1204
+n02091244,Ibizan hound,1140,253
+n02091467,Norwegian elkhound,1108,571
+n02091635,otterhound,396,13
+n02091831,Saluki,1087,649
+n02092002,Scottish deerhound,1333,906
+n02092173,staghound,165,1
+n02092339,Weimaraner,1722,1251
+n02092468,terrier,1741,748
+n02093056,bullterrier,1228,851
+n02093256,Staffordshire bullterrier,2070,1407
+n02093428,American Staffordshire terrier,1329,707
+n02093647,Bedlington terrier,849,259
+n02093754,Border terrier,1545,1141
+n02093859,Kerry blue terrier,937,197
+n02093991,Irish terrier,1283,640
+n02094114,Norfolk terrier,1000,327
+n02094258,Norwich terrier,1127,336
+n02094433,Yorkshire terrier,3047,2229
+n02094562,rat terrier,1386,892
+n02094721,Manchester terrier,1263,385
+n02094931,toy Manchester,834,47
+n02095050,fox terrier,894,543
+n02095212,smooth-haired fox terrier,130,3
+n02095314,wire-haired fox terrier,536,50
+n02095412,wirehair,1023,741
+n02095570,Lakeland terrier,1042,457
+n02095727,Welsh terrier,1424,875
+n02095889,Sealyham terrier,623,38
+n02096051,Airedale,1208,707
+n02096177,cairn,1377,1021
+n02096294,Australian terrier,1079,529
+n02096437,Dandie Dinmont,915,243
+n02096585,Boston bull,1494,1013
+n02096756,schnauzer,1377,889
+n02097047,miniature schnauzer,1324,944
+n02097130,giant schnauzer,1289,564
+n02097209,standard schnauzer,1040,203
+n02097298,Scotch terrier,1274,880
+n02097474,Tibetan terrier,774,398
+n02097658,silky terrier,1303,1054
+n02097786,Skye terrier,506,58
+n02097967,Clydesdale terrier,21,0
+n02098105,soft-coated wheaten terrier,1580,812
+n02098286,West Highland white terrier,1574,1054
+n02098413,Lhasa,1497,1146
+n02098550,sporting dog,1230,622
+n02098806,bird dog,1021,433
+n02098906,water dog,1218,999
+n02099029,retriever,1629,1100
+n02099267,flat-coated retriever,1342,1012
+n02099429,curly-coated retriever,727,78
+n02099601,golden retriever,1607,1007
+n02099712,Labrador retriever,1846,1015
+n02099849,Chesapeake Bay retriever,2143,1365
+n02099997,pointer,1212,801
+n02100236,German short-haired pointer,846,234
+n02100399,setter,2011,1513
+n02100583,vizsla,2334,1930
+n02100735,English setter,2426,1895
+n02100877,Irish setter,1425,1093
+n02101006,Gordon setter,1264,863
+n02101108,spaniel,1588,1084
+n02101388,Brittany spaniel,1489,904
+n02101556,clumber,1035,310
+n02101670,field spaniel,146,50
+n02101861,springer spaniel,1519,1156
+n02102040,English springer,1458,1076
+n02102177,Welsh springer spaniel,1084,392
+n02102318,cocker spaniel,1606,1262
+n02102480,Sussex spaniel,1069,92
+n02102605,water spaniel,972,322
+n02102806,American water spaniel,322,40
+n02102973,Irish water spaniel,587,111
+n02103181,griffon,153,101
+n02103406,working dog,1340,793
+n02103841,watchdog,1327,655
+n02104029,kuvasz,1263,240
+n02104184,attack dog,157,85
+n02104280,housedog,974,29
+n02104365,schipperke,1506,896
+n02104523,shepherd dog,1478,965
+n02104882,Belgian sheepdog,1232,643
+n02105056,groenendael,1329,396
+n02105162,malinois,1580,889
+n02105251,briard,1207,583
+n02105412,kelpie,1256,679
+n02105505,komondor,922,112
+n02105641,Old English sheepdog,1280,564
+n02105855,Shetland sheepdog,1620,1198
+n02106030,collie,1460,799
+n02106166,Border collie,1469,1089
+n02106382,Bouvier des Flandres,1470,281
+n02106550,Rottweiler,1226,768
+n02106662,German shepherd,1741,1235
+n02106854,police dog,1186,561
+n02106966,pinscher,1296,803
+n02107142,Doberman,1646,1335
+n02107312,miniature pinscher,1884,1411
+n02107420,Sennenhunde,1020,52
+n02107574,Greater Swiss Mountain dog,1207,462
+n02107683,Bernese mountain dog,1238,965
+n02107908,Appenzeller,1188,402
+n02108000,EntleBucher,447,41
+n02108089,boxer,1777,1427
+n02108254,mastiff,1243,784
+n02108422,bull mastiff,1080,372
+n02108551,Tibetan mastiff,1419,654
+n02108672,bulldog,1480,892
+n02108915,French bulldog,2297,1699
+n02109047,Great Dane,1575,983
+n02109150,guide dog,349,52
+n02109256,Seeing Eye dog,85,24
+n02109391,hearing dog,31,7
+n02109525,Saint Bernard,1555,1178
+n02109687,seizure-alert dog,5,0
+n02109811,sled dog,1536,944
+n02109961,Eskimo dog,1542,1208
+n02110063,malamute,1634,1070
+n02110185,Siberian husky,1296,819
+n02110341,dalmatian,1414,1127
+n02110532,liver-spotted dalmatian,36,24
+n02110627,affenpinscher,796,135
+n02110806,basenji,1845,1359
+n02110958,pug,1261,918
+n02111129,Leonberg,1106,282
+n02111277,Newfoundland,1714,1407
+n02111500,Great Pyrenees,1358,716
+n02111626,spitz,1135,598
+n02111889,Samoyed,1648,998
+n02112018,Pomeranian,1613,1202
+n02112137,chow,1233,779
+n02112350,keeshond,1306,718
+n02112497,griffon,1166,878
+n02112706,Brabancon griffon,277,88
+n02112826,corgi,1338,1160
+n02113023,Pembroke,1436,1116
+n02113186,Cardigan,1460,947
+n02113335,poodle,1345,993
+n02113624,toy poodle,1833,1055
+n02113712,miniature poodle,716,497
+n02113799,standard poodle,1956,1502
+n02113892,large poodle,333,161
+n02113978,Mexican hairless,272,95
+n02114100,wolf,1391,842
+n02114367,timber wolf,1820,994
+n02114548,white wolf,977,660
+n02114712,red wolf,1156,725
+n02114855,coyote,1664,925
+n02115012,coydog,116,24
