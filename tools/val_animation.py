@@ -8,7 +8,7 @@ from PIL import Image
 images = []
 for img in os.listdir("logs/2021-11-24T12-07-53_z_512_continued_3/val"):
     if "reconstruction" in img:
-        image = np.asarray(Image.open("logs/2021-11-24T12-07-53_z_512_continued_3/val/" + img))
+        image = np.asarray(Image.open("logs/2021-11-30T22-23-36_512_pretrained_continue/images/val/" + img))
         images.append(image)
 
 FIGSIZE = (18, 6)
