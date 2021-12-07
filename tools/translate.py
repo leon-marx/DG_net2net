@@ -112,28 +112,36 @@ def translation(model, image):
             translations.append({"img": x_inv_rec, "cond": cond_dict[i]})
     return translations
 
-def make_plot(model, images):
+def make_plot(model, images, save_to=None):
     plt.figure(figsize=(15, 15))
     for i, image in enumerate(images):
         plt.subplot(5, 5, 5*i+1)
         plt.title(f"Original: {image['fname']}")
+        plt.xticks([])
+        plt.yticks([])
         plt.imshow((image["image"].view(3, 256, 256).permute(1, 2, 0).numpy() + 1) / 2)
         translations = translation(model, image)
         for j in range(4):
             x = translations[j]["img"]
             plt.subplot(5, 5, 5*i+j+2)
-            plt.imshow((x.view(3, 256, 256).permute(1, 2, 0).numpy() + 1) / 2)
             plt.title(f"Condition: {translations[j]['cond']}")
-    plt.show()
+            plt.xticks([])
+            plt.yticks([])
+            plt.imshow((x.view(3, 256, 256).permute(1, 2, 0).numpy() + 1) / 2)
+    if save_to == None:
+        plt.show()
+    else:
+        plt.savefig(save_to)
 
-def main():
+def main(iterations=1):
     m = get_model()
     d = get_dset()
-    images = get_images(d, 5)
-    make_plot(m, images)
-    print("done")
+    for i in range(iterations):
+        print(f"Iteration: {i}")
+        images = get_images(d, 5)
+        make_plot(m, images, save_to=f"logs/generated_net2net_2/img_{i}.jpg")
 
 
 # Execution
 if __name__ == "__main__":
-    main()
+    main(50)
